@@ -10,32 +10,34 @@
  * governing permissions and limitations under the License.
  */
 
-import { setLibs } from './utils.js';
+import {
+  setLibs,
+  unwrapSingularFragments,
+  decorateButtons,
+  turnH6intoDetailM,
+  customSpacings,
+  externalLinks,
+  gnavUnderline,
+  handleAnchors,
+} from './utils.js';
 
-// Add project-wide style path here.
-const STYLES = '';
-
-// Use '/libs' if your live site maps '/libs' to milo's origin.
 const LIBS = 'https://milo.adobe.com/libs';
-
-// Add any config options.
+const STYLES = '/pages/styles/styles.css';
 const CONFIG = {
-  // codeRoot: '',
-  // contentRoot: '',
-  imsClientId: 'stockpoc',
-  // geoRouting: 'off',
-  // fallbackRouting: 'off',
+  // imsClientId: 'college',
+  contentRoot: '/pages',
+  codeRoot: '/pages',
   locales: {
     '': { ietf: 'en-US', tk: 'hah7vzn.css' },
-    de: { ietf: 'de-DE', tk: 'hah7vzn.css' },
-    kr: { ietf: 'ko-KR', tk: 'zfo3ouc' },
+    br: { ietf: 'pt-BR', tk: 'inq1xob.css' },
+    es: { ietf: 'es-ES', tk: 'oln4yqj.css' },
+    jp: { ietf: 'ja-JP', tk: 'dvg6awq' },
   },
 };
 
-// Load LCP image immediately
 (async function loadLCPImage() {
   const lcpImg = document.querySelector('img');
-  lcpImg?.removeAttribute('loading');
+  lcpImg?.setAttribute('loading', 'eager');
 }());
 
 /*
@@ -57,10 +59,24 @@ const miloLibs = setLibs(LIBS);
   });
 }());
 
-(async function loadPage() {
-  const { loadArea, loadDelayed, setConfig } = await import(`${miloLibs}/utils/utils.js`);
+const { loadArea, loadDelayed, setConfig } = await import(`${miloLibs}/utils/utils.js`);
 
+(async function loadPage() {
   setConfig({ ...CONFIG, miloLibs });
+  decorateButtons();
+  turnH6intoDetailM();
   await loadArea();
+  unwrapSingularFragments();
+  externalLinks();
+  customSpacings();
+  gnavUnderline();
+  handleAnchors();
   loadDelayed();
+
+  // // temporary - figure out how to remove artist hub's gnav
+  // const gnavCurtain = document.getElementsByClassName('gnav-curtain')[0];
+  // const gnavWrapper = document.getElementsByClassName('gnav-wrapper')[0];
+
+  // gnavCurtain.remove();
+  // gnavWrapper.remove();
 }());
