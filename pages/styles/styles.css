@@ -269,13 +269,13 @@ main > .section:not(:empty):not(:first-child).has-background + .section:not(.has
   padding-top: 0;
 }
 
-main > .section:not(:empty):last-child {
+/* main > .section:not(:empty):last-child {
   padding-bottom: var(--block-spacing-m);
-}
+} */
 
 main > .section.has-background,
 .fragment > .section.has-background {
-  padding-bottom: var(--block-spacing-m);
+  /* padding-bottom: var(--block-spacing-m); */
   padding-top: var(--block-spacing-m);
 }
 
@@ -293,13 +293,13 @@ main > .section > .page-feed + .content > p.button-container:first-child {
   margin-top: var(--block-spacing-xs);
 }
 
-main > .section:not(:empty):last-child {
+/* main > .section:not(:empty):last-child {
   padding-bottom: var(--block-spacing-m);
-}
+} */
 
 main > .section.has-background,
 .fragment > .section.has-background {
-  padding-bottom: var(--block-spacing-m);
+  /* padding-bottom: var(--block-spacing-m); */
   padding-top: var(--block-spacing-m);
 }
 
@@ -309,9 +309,9 @@ main > .section.center > .content > picture > img {
   margin-right: auto;
 }
 
-main > .section:not(.has-background) > .content:last-child {
+/* main > .section:not(.has-background) > .content:last-child {
   padding-bottom: var(--block-spacing-m);
-}
+} */
 
 main > .section > .content + .image-rows {
   padding-top: var(--block-spacing-m);
