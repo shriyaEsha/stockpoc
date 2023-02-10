@@ -71,6 +71,11 @@ And causes a UI glitch
 Until we figure out how to not fetch Milo's Gnav, keep these 2 styles
 */
 
+/* Hide Milo's hamburger for smaller screens */
+.gnav-toggle {
+  display: none;
+}
+
 header .gnav-wrapper {
   height: 0 !important;
   min-height: 0 !important;
