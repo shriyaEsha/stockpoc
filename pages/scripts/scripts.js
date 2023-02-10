@@ -91,7 +91,7 @@ const { loadArea, loadDelayed, setConfig } = await import(`${miloLibs}/utils/uti
   customSpacings();
   gnavUnderline();
   handleAnchors();
-  await loadDelayed();
+  loadDelayed();
 
   loadStockNavbar();
 }());
