@@ -74,9 +74,9 @@ const { loadArea, loadDelayed, setConfig } = await import(`${miloLibs}/utils/uti
   loadDelayed();
 
   // // temporary - figure out how to remove artist hub's gnav
-  // const gnavCurtain = document.getElementsByClassName('gnav-curtain')[0];
-  // const gnavWrapper = document.getElementsByClassName('gnav-wrapper')[0];
+  const gnavCurtain = document.getElementsByClassName('gnav-curtain')[0];
+  const gnavWrapper = document.getElementsByClassName('gnav-wrapper')[0];
 
-  // gnavCurtain.remove();
-  // gnavWrapper.remove();
+  gnavCurtain.remove();
+  gnavWrapper.remove();
 }());
