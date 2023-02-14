@@ -69,32 +69,6 @@ function WrappedApp() {
     fetchLocalizedStrings();
   }, []);
 
-  // Privacy & Consent for GDPR Banner
-
-//   function checkConsent() {
-//     const activeGroups = window.adobePrivacy.activeCookieGroups();
-//     if (activeGroups.indexOf('C0004') !== -1) { // the group I want to check
-//         // load your tracking script
-//         // perform group related actions
-//         console.log('Tracking now!')
-//     }
-// }
- 
-// window.addEventListener('adobePrivacy:PrivacyConsent', () => {
-//     console.log('all groups and hosts enabled');
-//     checkConsent();
-// });
- 
-// window.addEventListener('adobePrivacy:PrivacyCustom', () => {
-//     console.log('user selected groups and hosts');
-//     checkConsent();
-// });
- 
-// window.addEventListener('adobePrivacy:PrivacyReject', () => {
-//     console.log('only core groups and hosts enabled - C0001');
-//     checkConsent();
-// });
-
 if (localizedStrings) {
   return (
     <IntlProvider
