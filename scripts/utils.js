@@ -258,7 +258,7 @@ export function getMetadata(name) {
 }
 
 export async function loadBlockCSS(blockName) {
-  const href = `/blocks/${blockName}/${blockName}.css`;
+  const href = `blocks/${blockName}/${blockName}.css`;
   if (document.querySelector(`head > link[href="${href}"]`)) return;
   // eslint-disable-next-line consistent-return
   return new Promise((resolve) => {
