@@ -330,3 +330,35 @@ main .section:first-child > .breadcrumbs + .content + .share {
   padding-top: 16px;
   padding-bottom: 32px;
 }
+
+/* Custom Footer Styles */
+footer {
+  /* min-height: 48px; */
+  background: rgb(34,34,34) !important;
+  padding: 10px !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-wrapper {
+  width: 100%;
+  padding: 6px 8px;
+}
+
+.footer-info {
+  margin-top: 0 !important;
+}
+
+footer a:any-link, .footer-region-text, .footer-privacy {
+  color: rgb(179, 179, 179) !important;
+  font-size: 12px !important;
+}
+
+.footer-region-img {
+  fill: rgb(179, 179, 179) !important;
+}
+
+.footer-region-button .icon-chevron-down {
+  display: none;
+}
