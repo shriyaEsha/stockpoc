@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "Website foundation technology.",
-  "source": "pages/scripts/stocknavbar/scripts.js",
+  "source": "scripts/stocknavbar/scripts.js",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",

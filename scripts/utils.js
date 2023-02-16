@@ -35,7 +35,7 @@ export async function fetchPlaceholders() {
   // const localeRoot = locale.contentRoot;
   if (!window.placeholders) {
     try {
-      // const resp = await fetch(`${localeRoot}/pages/stockpoc/placeholders.json`);
+      // const resp = await fetch(`${localeRoot}/stockpoc/placeholders.json`);
       const resp = await fetch('/drafts/stocknavbar/placeholders.json');
       const json = await resp.json();
       window.placeholders = {};
@@ -43,7 +43,7 @@ export async function fetchPlaceholders() {
         window.placeholders[toClassName(placeholder.Key)] = placeholder.Text;
       });
     } catch {
-      const resp = await fetch('/pages/stockpoc/placeholders.json');
+      const resp = await fetch('/stockpoc/placeholders.json');
       const json = await resp.json();
       window.placeholders = {};
       json.data.forEach((placeholder) => {
@@ -221,7 +221,7 @@ export async function gnavUnderline() {
   const links = document.querySelectorAll('.gnav-navitem > a');
   let currentActivePage;
   for (let i = 0; i < links.length; i += 1) {
-    if (window.location.host === links[i].host && relHref.startsWith(makeRelative(links[i].href)) && !(relHref.endsWith('/pages/stockpoc/'))) {
+    if (window.location.host === links[i].host && relHref.startsWith(makeRelative(links[i].href)) && !(relHref.endsWith('/stockpoc/'))) {
       currentActivePage = document.querySelector('.gnav-navitem > a.active-page');
       if (currentActivePage) currentActivePage.classList.remove('active-page');
       links[i].classList.add('active-page');
@@ -258,7 +258,7 @@ export function getMetadata(name) {
 }
 
 export async function loadBlockCSS(blockName) {
-  const href = `/pages/blocks/${blockName}/${blockName}.css`;
+  const href = `/blocks/${blockName}/${blockName}.css`;
   if (document.querySelector(`head > link[href="${href}"]`)) return;
   // eslint-disable-next-line consistent-return
   return new Promise((resolve) => {

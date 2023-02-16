@@ -57,7 +57,7 @@ function WrappedApp() {
            setLocalizedStrings(messages);
          } else if (res.status === 404) {
            // local
-           const res = await fetch(`/pages/scripts/stocknavbar/strings/${languageTag}.json`);
+           const res = await fetch(`/scripts/stocknavbar/strings/${languageTag}.json`);
            const json = await res.json();
            setLocalizedStrings(json);
          }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { getLocalizedURL, getAppLocale } from '@intl/adobe-locales';
-import { StockNavbarFranklinWrapper } from '../../../stock.navbar';
+import { StockNavbarFranklinWrapper } from '../../stock.navbar';
 
 const config = {
     authentication: {

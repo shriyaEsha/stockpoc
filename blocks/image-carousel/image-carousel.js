@@ -1,5 +1,4 @@
-
-import { 
+import {
   createTag,
   createSVG,
 } from '../../scripts/utils.js';
@@ -154,8 +153,8 @@ function buildCarousel(imgSlides, block, aspectRatio = '50%') {
   block.appendChild(wrapper);
   const prev = createTag('button', { class: 'image-carousel-arrow image-carousel-previous', 'aria-label': 'Previous slide', type: 'button' });
   const next = createTag('button', { class: 'image-carousel-arrow image-carousel-next', 'aria-label': 'Next slide', type: 'button' });
-  prev.appendChild(createSVG(`pages/blocks/image-carousel/image-carousel.svg`, 'chevron'));
-  next.appendChild(createSVG(`pages/blocks/image-carousel/image-carousel.svg`, 'chevron'));
+  prev.appendChild(createSVG('blocks/image-carousel/image-carousel.svg', 'chevron'));
+  next.appendChild(createSVG('blocks/image-carousel/image-carousel.svg', 'chevron'));
   controls.appendChild(prev);
   controls.appendChild(next);
   imgSlides.forEach((imgSlide, index) => {
@@ -164,7 +163,7 @@ function buildCarousel(imgSlides, block, aspectRatio = '50%') {
     imgSlide.img.tabIndex = 0;
     imgSlide.ariaLabel = `Slide ${index + 1}`;
     const expandButton = createTag('button', { class: 'image-carousel-expand', 'aria-label': 'Open in full screen', type: 'button' });
-    expandButton.appendChild(createSVG(`pages/blocks/image-carousel/image-carousel.svg`, 'expand'));
+    expandButton.appendChild(createSVG('blocks/image-carousel/image-carousel.svg', 'expand'));
     slide.appendChild(expandButton);
     slideswrapper.appendChild(slide);
     const dot = createTag('button', { class: 'image-carousel-dot', 'aria-label': `Slide ${index + 1}`, type: 'button' });
@@ -173,8 +172,8 @@ function buildCarousel(imgSlides, block, aspectRatio = '50%') {
   });
   const lightbox = wrapper.cloneNode(true);
   lightbox.classList.add('image-carousel-lightbox');
-  const closeButton = createTag('button', { class: 'image-carousel-close-lightbox', 'aria-label': 'Close full screen', 'type': 'button'  });
-  closeButton.appendChild(createSVG(`pages/blocks/image-carousel/image-carousel.svg`, 'close'));
+  const closeButton = createTag('button', { class: 'image-carousel-close-lightbox', 'aria-label': 'Close full screen', type: 'button' });
+  closeButton.appendChild(createSVG('blocks/image-carousel/image-carousel.svg', 'close'));
   lightbox.appendChild(closeButton);
   block.appendChild(lightbox);
   const lightboxThumbnails = lightbox.querySelectorAll('.image-carousel-dot');
@@ -190,7 +189,7 @@ export default function imageCarousel(block) {
   const imgSlides = [];
   let aspectRatio;
   const ps = Array.from(block.querySelectorAll('p'));
-  ps.forEach((p) => { [...p.querySelectorAll('br')].forEach((br) => br.remove()) });
+  ps.forEach((p) => { [...p.querySelectorAll('br')].forEach((br) => br.remove()); });
   [...imgs].forEach((picture) => {
     // unwrap picture if wrapped in p tag
     if (picture.parentElement.tagName === 'P') {
@@ -208,7 +207,7 @@ export default function imageCarousel(block) {
       if (nextElement && nextElement.childNodes.length !== 0 && nextElement.textContent !== '') caption = nextElement;
     }
     if (caption.innerHTML.trim() === '') caption = null;
-    imgSlides.push({ img: picture, caption: caption });
+    imgSlides.push({ img: picture, caption });
     // Find the aspect ratio of the shortest image
     const img = picture.querySelector('img');
     const ratio = img.offsetHeight / img.offsetWidth;
@@ -216,5 +215,5 @@ export default function imageCarousel(block) {
   });
   // Build the carousel:
   block.innerHTML = '';
-  buildCarousel(imgSlides, block, `{(aspectRatio * 100)}%`);
+  buildCarousel(imgSlides, block, '{(aspectRatio * 100)}%');
 }

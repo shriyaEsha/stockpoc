@@ -22,11 +22,11 @@ import {
 } from './utils.js';
 
 const LIBS = 'https://milo.adobe.com/libs';
-const STYLES = '/pages/styles/styles.css';
+const STYLES = 'styles/styles.css';
 const CONFIG = {
   // imsClientId: 'college',
-  contentRoot: '/pages',
-  codeRoot: '/pages',
+  contentRoot: '/',
+  codeRoot: '/',
   locales: {
     '': { ietf: 'en-US', tk: 'hah7vzn.css' },
     br: { ietf: 'pt-BR', tk: 'inq1xob.css' },
