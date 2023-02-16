@@ -25,8 +25,8 @@ const LIBS = 'https://milo.adobe.com/libs';
 const STYLES = 'styles/styles.css';
 const CONFIG = {
   // imsClientId: 'college',
-  contentRoot: '/',
-  codeRoot: '/',
+  contentRoot: '',
+  codeRoot: '',
   locales: {
     '': { ietf: 'en-US', tk: 'hah7vzn.css' },
     br: { ietf: 'pt-BR', tk: 'inq1xob.css' },
