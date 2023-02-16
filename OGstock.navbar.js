@@ -1,0 +1,41 @@
+!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t(require("react"),require("styled-components"),require("@astock/styled-react-components/design"),require("@astock/styled-react-components/stockLogo"),require("react-intl"),require("@react/react-spectrum/Button"),require("@react/react-spectrum/Icon/Apps"),require("prop-types"),require("@react/react-spectrum/Icon/LinkOut"),require("@react/react-spectrum/Menu"),require("@astock/styled-react-components/navbarMarketplace"),require("@react/react-spectrum/OverlayTrigger"),require("@astock/styled-react-components/avatar"),require("@astock/styled-react-components/constants"),require("@astock/styled-react-components/dropdownList"),require("@astock/styled-react-components/dropdownListItem"),require("@react/react-spectrum/Link"),require("@react/react-spectrum/Icon/ChevronDown"),require("@react/react-spectrum/DropdownButton"),require("@react/react-spectrum/Icon/CreativeCloud"),require("@react/react-spectrum/Icon/ShowMenu"),require("@react/react-spectrum/Icon/ViewList")):"function"==typeof define&&define.amd?define("stockNavbar",["react","styled-components","@astock/styled-react-components/design","@astock/styled-react-components/stockLogo","react-intl","@react/react-spectrum/Button","@react/react-spectrum/Icon/Apps","prop-types","@react/react-spectrum/Icon/LinkOut","@react/react-spectrum/Menu","@astock/styled-react-components/navbarMarketplace","@react/react-spectrum/OverlayTrigger","@astock/styled-react-components/avatar","@astock/styled-react-components/constants","@astock/styled-react-components/dropdownList","@astock/styled-react-components/dropdownListItem","@react/react-spectrum/Link","@react/react-spectrum/Icon/ChevronDown","@react/react-spectrum/DropdownButton","@react/react-spectrum/Icon/CreativeCloud","@react/react-spectrum/Icon/ShowMenu","@react/react-spectrum/Icon/ViewList"],t):"object"==typeof exports?exports.stockNavbar=t(require("react"),require("styled-components"),require("@astock/styled-react-components/design"),require("@astock/styled-react-components/stockLogo"),require("react-intl"),require("@react/react-spectrum/Button"),require("@react/react-spectrum/Icon/Apps"),require("prop-types"),require("@react/react-spectrum/Icon/LinkOut"),require("@react/react-spectrum/Menu"),require("@astock/styled-react-components/navbarMarketplace"),require("@react/react-spectrum/OverlayTrigger"),require("@astock/styled-react-components/avatar"),require("@astock/styled-react-components/constants"),require("@astock/styled-react-components/dropdownList"),require("@astock/styled-react-components/dropdownListItem"),require("@react/react-spectrum/Link"),require("@react/react-spectrum/Icon/ChevronDown"),require("@react/react-spectrum/DropdownButton"),require("@react/react-spectrum/Icon/CreativeCloud"),require("@react/react-spectrum/Icon/ShowMenu"),require("@react/react-spectrum/Icon/ViewList")):e.stockNavbar=t(e.react,e["styled-components"],e["@astock/styled-react-components/design"],e["@astock/styled-react-components/stockLogo"],e["react-intl"],e["@react/react-spectrum/Button"],e["@react/react-spectrum/Icon/Apps"],e["prop-types"],e["@react/react-spectrum/Icon/LinkOut"],e["@react/react-spectrum/Menu"],e["@astock/styled-react-components/navbarMarketplace"],e["@react/react-spectrum/OverlayTrigger"],e["@astock/styled-react-components/avatar"],e["@astock/styled-react-components/constants"],e["@astock/styled-react-components/dropdownList"],e["@astock/styled-react-components/dropdownListItem"],e["@react/react-spectrum/Link"],e["@react/react-spectrum/Icon/ChevronDown"],e["@react/react-spectrum/DropdownButton"],e["@react/react-spectrum/Icon/CreativeCloud"],e["@react/react-spectrum/Icon/ShowMenu"],e["@react/react-spectrum/Icon/ViewList"])}(window,(function(e,t,r,n,c,o,a,s,i,u,p,l,d,m,f,y,k,v,b,x,q,g){return function(e){function t(t){for(var r,c,o=t[0],a=t[1],s=0,u=[];s<o.length;s++)c=o[s],n[c]&&u.push(n[c][0]),n[c]=0;for(r in a)Object.prototype.hasOwnProperty.call(a,r)&&(e[r]=a[r]);for(i&&i(t);u.length;)u.shift()()}var r={},n={0:0};function c(t){if(r[t])return r[t].exports;var n=r[t]={i:t,l:!1,exports:{}};return e[t].call(n.exports,n,n.exports,c),n.l=!0,n.exports}c.e=function(e){var t=[],r=n[e];if(0!==r)if(r)t.push(r[2]);else{var o=new Promise((function(t,c){r=n[e]=[t,c]}));t.push(r[2]=o);var a,s=document.createElement("script");s.charset="utf-8",s.timeout=120,c.nc&&s.setAttribute("nonce",c.nc),s.src=function(e){return c.p+""+e+".stock.navbar.js"}(e),a=function(t){s.onerror=s.onload=null,clearTimeout(i);var r=n[e];if(0!==r){if(r){var c=t&&("load"===t.type?"missing":t.type),o=t&&t.target&&t.target.src,a=new Error("Loading chunk "+e+" failed.\n("+c+": "+o+")");a.type=c,a.request=o,r[1](a)}n[e]=void 0}};var i=setTimeout((function(){a({type:"timeout",target:s})}),12e4);s.onerror=s.onload=a,document.head.appendChild(s)}return Promise.all(t)},c.m=e,c.c=r,c.d=function(e,t,r){c.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},c.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},c.t=function(e,t){if(1&t&&(e=c(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(c.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)c.d(r,n,function(t){return e[t]}.bind(null,n));return r},c.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return c.d(t,"a",t),t},c.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},c.p="",c.oe=function(e){throw e};var o=window.webpackJsonpstockNavbar=window.webpackJsonpstockNavbar||[],a=o.push.bind(o);o.push=t,o=o.slice();for(var s=0;s<o.length;s++)t(o[s]);var i=a;return c(c.s=7)}([function(t,r){t.exports=e},function(e,r){e.exports=t},function(e,t){e.exports=r},function(e,t){e.exports=n},function(e,t){e.exports=c},function(e,t){e.exports=o},function(e,t){e.exports=a},function(e,t,r){"use strict";r.r(t);var n=r(0),c=r.n(n),o=r(4),a=r(6),s=r.n(a),i=r(3),u=r.n(i),p=r(1),l=r.n(p),d=r(5),m=r.n(d),f=r(2);const y=l.a.div`
+  height: ${56}px;
+  width: 100%;
+  display: inline-flex;
+  background: ${f.SPECTRUM_COLOR_STATIC_WHITE};
+  align-items: center;
+  border-bottom: 2px solid ${f.SPECTRUM_COLOR_GRAY_300};
+  position: relative;
+  z-index: 3;
+`,k=l.a.div`
+  display: inline-flex;
+
+  .left-nav-toggle {
+    margin: 0;
+  }
+`,v=l()(k)`
+  svg {
+    margin-top: 2px;
+    margin-left: 20px;
+  }
+`,b=l.a.div`
+  display: none;
+
+  @media only screen and (max-width: 480px) {
+    display: contents;
+  }
+`,x=l.a.div`
+   display: none;
+
+   @media only screen and (min-width: 481px) {
+    display: contents;
+  }
+`,q=l.a.div`
+  display: inline-flex;
+  margin-left: 20px;
+`,g=l()(m.a)`
+  &&& {
+    border: none;
+    background: transparent;
+  }
+`;var w=Object(o.injectIntl)((function(e){let{config:t,phoneNumber:o,intl:a,isNavbarV2Enabled:i}=e;const[p,l]=Object(n.useState)(null);Object(n.useEffect)(()=>{l(Object(n.lazy)(()=>Promise.all([r.e(3),r.e(1)]).then(r.bind(null,166))))},[]);const d=c.a.createElement(y,null,c.a.createElement(k,null,c.a.createElement(q,null,c.a.createElement(g,{autoFocus:!1,block:!1,disabled:!1,element:"button",holdAffordance:!1,icon:c.a.createElement(s.a,{size:"S"}),invalid:!1,label:null,variant:"action"})),c.a.createElement(x,null,c.a.createElement(v,null,c.a.createElement(u.a,{width:108,textColorDark:!0}))),c.a.createElement(v,null,c.a.createElement(b,null,c.a.createElement(u.a,{hideText:!0,textColorDark:!0})))));return p?c.a.createElement(n.Suspense,{fallback:d},c.a.createElement(p,{config:t,intl:a,navbarPhoneNumber:o,isNavbarV2Enabled:i})):d}));r.d(t,"StockNavbarFranklinWrapper",(function(){return w}))},function(e,t){e.exports=s},function(e,t){e.exports=i},function(e,t){e.exports=u},function(e,t){e.exports=p},function(e,t){e.exports=l},function(e,t){e.exports=d},function(e,t){e.exports=m},function(e,t){e.exports=f},function(e,t){e.exports=y},function(e,t){e.exports=k},function(e,t){e.exports=v},function(e,t){e.exports=b},function(e,t){e.exports=x},function(e,t){e.exports=q},function(e,t){e.exports=g}])}));

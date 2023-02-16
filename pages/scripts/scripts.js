@@ -60,23 +60,25 @@ const miloLibs = setLibs(LIBS);
 }());
 
 function loadStockNavbar() {
+  // try to load nav lazily
+  const scriptNav = document.createElement('script');
+  scriptNav.src = '/dist/scripts.js';
+  scriptNav.type = 'module';
+  document.querySelector('head').append(scriptNav);
+
+  const cssNav = document.createElement('link');
+  cssNav.href = '/dist/scripts.css';
+  cssNav.rel = 'stylesheet';
+  document.querySelector('head').append(cssNav);
+}
+
+function removeMiloGnav() {
   // temporary - figure out how to remove milo's gnav
   const gnavCurtain = document.getElementsByClassName('gnav-curtain')[0];
   const gnavWrapper = document.getElementsByClassName('gnav-wrapper')[0];
 
   gnavCurtain.remove();
   gnavWrapper.remove();
-
-  // try to load nav lazily
-  // const scriptNav = document.createElement('script');
-  // scriptNav.src = '/dist/scripts.js';
-  // scriptNav.type = 'module';
-  // document.querySelector('head').append(scriptNav);
-
-  // const cssNav = document.createElement('link');
-  // cssNav.href = '/dist/scripts.css';
-  // cssNav.rel = 'stylesheet';
-  // document.querySelector('head').append(cssNav);
 }
 
 const { loadArea, loadDelayed, setConfig } = await import(`${miloLibs}/utils/utils.js`);
@@ -92,5 +94,6 @@ const { loadArea, loadDelayed, setConfig } = await import(`${miloLibs}/utils/uti
   gnavUnderline();
   handleAnchors();
   loadStockNavbar();
-  loadDelayed();
+  await loadDelayed();
+  removeMiloGnav();
 }());
