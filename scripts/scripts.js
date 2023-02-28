@@ -87,13 +87,13 @@ const { loadArea, loadDelayed, setConfig } = await import(`${miloLibs}/utils/uti
   setConfig({ ...CONFIG, miloLibs });
   decorateButtons();
   turnH6intoDetailM();
+  loadStockNavbar();
   await loadArea();
   unwrapSingularFragments();
   externalLinks();
   customSpacings();
   gnavUnderline();
   handleAnchors();
-  loadStockNavbar();
   await loadDelayed();
   removeMiloGnav();
 }());
