@@ -28,7 +28,7 @@ const CONFIG = {
   // custom edgeConfigId values for Stock
   local: { edgeConfigId: '9a1395f3-a8e1-4287-8625-58c6bddb08f8' },
   stage: { edgeConfigId: '9a1395f3-a8e1-4287-8625-58c6bddb08f8' },
-  prod: { edgeConfigId: '8d2805dd-85bf-4748-82eb-f99fdad117a6' },
+  prod: { edgeConfigId: 'da157e66-32ea-47df-bee3-55901c66e46f' },
   locales: {
     '': { ietf: 'en-US', tk: 'hah7vzn.css' },
     de: { ietf: 'de-DE', tk: 'hah7vzn.css' },
